@@ -35,7 +35,7 @@ To deploy this environment:
 1. Execute the following commands to deploy the demo environment (this will take ~25 minutes). Any warning can be safely ignored. The data explorer pool takes the most time to deploy.
 
     ```azurecli
-    az group create --name rg-dp-203 --location westeurope
+    az group create --name rg-dp-203 --location eastus
     az deployment group create --name dp-203 --resource-group rg-dp-203 --template-file ./automation/dp-203.bicep --parameters sqlUser=azureuser sqlPassword=$password userobjectid=$userobjectid powerBIAdminEmailAddress=$powerBIAdminEmailAddress uniqueSuffix=$uniqueSuffix
     ```
 
